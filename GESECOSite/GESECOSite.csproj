@@ -94,6 +94,7 @@
     <Content Include="Content\css\assets.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\color\color-1.css" />
+    <Content Include="Content\css\dashboard.css" />
     <Content Include="Content\css\shortcodes\accordion.css" />
     <Content Include="Content\css\shortcodes\alert.css" />
     <Content Include="Content\css\shortcodes\breadcrumb.css" />
@@ -129,6 +130,7 @@
     <Content Include="images\about\pic1.jpg" />
     <Content Include="images\adv\adv.jpg" />
     <Content Include="images\assets\coloredbg.png" />
+    <Content Include="images\assets\favicon.png" />
     <Content Include="images\assets\gridtile.png" />
     <Content Include="images\assets\gridtile_3x3.png" />
     <Content Include="images\assets\gridtile_3x3_white.png" />
@@ -202,6 +204,7 @@
     <Content Include="images\logo-white-2.png" />
     <Content Include="images\logo-white.png" />
     <Content Include="images\logo.gif" />
+    <Content Include="images\logo.png" />
     <Content Include="images\our-services\pic1.jpg" />
     <Content Include="images\our-services\pic2.jpg" />
     <Content Include="images\our-services\pic3.jpg" />
@@ -258,6 +261,7 @@
     <Content Include="Scripts\revolution\js\extensions\revolution.extension.video.min.js" />
     <Content Include="Scripts\revolution\js\jquery.themepunch.revolution.min.js" />
     <Content Include="Scripts\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Scripts\scroll\scrollbar.min.js" />
     <Content Include="Scripts\summernote\summernote.css" />
     <Content Include="Scripts\summernote\summernote.js" />
     <Content Include="Scripts\switcher\switcher.js" />
@@ -265,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -293,6 +298,10 @@
     <Content Include="Scripts\summernote\font\summernotec360.ttf" />
     <Content Include="Scripts\summernote\font\summernotec360.woff" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ForgetPassword.cshtml" />
+    <Content Include="Views\Admin\AddStudents.cshtml" />
+    <Content Include="Views\Admin\AddTeachers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -6,22 +6,18 @@ using System.Web.Mvc;
 
 namespace GESECOSite.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
-        // GET: Home
+        // GET: Admin
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Login()
+        public ActionResult AddStudents()
         {
             return View();
         }
-        public ActionResult Register()
-        {
-            return View();
-        }
-        public ActionResult ForgetPassword()
+        public ActionResult AddTeachers()
         {
             return View();
         }
