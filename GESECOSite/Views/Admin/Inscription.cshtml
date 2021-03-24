@@ -4,6 +4,7 @@
 }
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 
@@ -62,9 +63,9 @@
             <!--logo start -->
             <div class="ttr-logo-box">
                 <div>
-                    <a href="index.html" class="ttr-logo">
-                        <img alt="" class="ttr-logo-mobile" src="~/images/logo-mobile.png" width="30" height="30">
-                        <img alt="" class="ttr-logo-desktop" src="~/images/logo-white.png" width="160" height="27">
+                    <a href="@Url.Action("IndexAdmin","Admin")" class="ttr-logo">
+                        <img class="ttr-logo-mobile" alt="" src="~/images/logo-mobile.png" width="30" height="30">
+                        <img class="ttr-logo-desktop" alt="" src="~/images/logo-white.png" width="160" height="27">
                     </a>
                 </div>
             </div>
@@ -80,7 +81,6 @@
                         <a href="#" class="ttr-material-button ttr-submenu-toggle">QUICK MENU <i class="fa fa-angle-down"></i></a>
                         <div class="ttr-header-submenu">
                             <ul>
-                                @*todo*@
                                 <li><a href="../courses.html">Our Courses</a></li>
                                 <li><a href="../event.html">New Event</a></li>
                                 <li><a href="../membership.html">Membership</a></li>
@@ -234,11 +234,11 @@
         <div class="ttr-sidebar-wrapper content-scroll">
             <!-- side menu logo start -->
             <div class="ttr-sidebar-logo">
-                <a href="#"><img alt="" src="~/images/logo.png" width="122" height="27"></a>
+                <a href="#"><img alt="" src="assets/~/images/logo.png" width="122" height="27"></a>
                 <!-- <div class="ttr-sidebar-pin-button" title="Pin/Unpin Menu">
-        <i class="material-icons ttr-fixed-icon">gps_fixed</i>
-        <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
-    </div> -->
+                    <i class="material-icons ttr-fixed-icon">gps_fixed</i>
+                    <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
+                </div> -->
                 <div class="ttr-sidebar-toggle-button">
                     <i class="ti-arrow-left"></i>
                 </div>
@@ -248,13 +248,13 @@
             <nav class="ttr-sidebar-navi">
                 <ul>
                     <li>
-                        <a href="index.html" class="ttr-material-button">
+                        <a href="@Url.Action("IndexAdmin","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-home"></i></span>
                             <span class="ttr-label">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Inscription.html" class="ttr-material-button">
+                        <a href="@Url.Action("Inscription","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-book"></i></span>
                             <span class="ttr-label">Inscription</span>
                         </a>
@@ -275,27 +275,25 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="Authentification.html" class="ttr-material-button">
+                        <a href="@Url.Action("Authentification","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
                             <span class="ttr-label">Etat</span>
                         </a>
                     </li>
                     <li>
-                        @*todo*@
-                        <a href="payement.html" class="ttr-material-button">
+                        <a href="@Url.Action("Payement","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-comments"></i></span>
                             <span class="ttr-label">Payement</span>
                         </a>
                     </li>
                     <li>
-                        @*todo*@
-                        <a href="Liste_Etu.html" class="ttr-material-button">
+                        <a href="@Url.Action("ListeEtudiant","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
                             <span class="ttr-label">Liste des Etudiants</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Edition_infos.html" class="ttr-material-button">
+                        <a href="@Url.Action("EditionInfos","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-user"></i></span>
                             <span class="ttr-label">Edition des Informations</span>
 
@@ -314,10 +312,10 @@
     <main class="ttr-wrapper">
         <div class="container-fluid">
             <div class="db-breadcrumb">
-                <h4 class="breadcrumb-title">Ajouter un Enseignant</h4>
+                <h4 class="breadcrumb-title">Inscription</h4>
                 <ul class="db-breadcrumb-list">
                     <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-                    <li>Ajouter un Enseignant</li>
+                    <li>Inscription</li>
                 </ul>
             </div>
             <div class="row">
@@ -325,7 +323,7 @@
                 <div class="col-lg-12 m-b30">
                     <div class="widget-box">
                         <div class="wc-title">
-                            <h4>Ajouter un Enseignant</h4>
+                            <h4>Inscription</h4>
                         </div>
                         <div class="widget-inner">
                             <form class="edit-profile m-b30">
@@ -385,91 +383,59 @@
                                             <input class="form-control" type="text" value="Address">
                                         </div>
                                     </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Filiere</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control" type="text" value="Sector">
+                                        </div>
+                                    </div>
 
                                     <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
 
-                                    <div class="col-12 m-t20">
-                                        <div class="ml-auto">
+                                    <div class="form-group row">
+                                        <div class="col-sm-10 ml-auto">
                                             <h3 class="m-form__section">3. Adresses Sociales</h3>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Facebook</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.facebook.com">
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Facebook</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control" type="text" value="www.facebook.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Twitter</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control" type="text" value="www.twitter.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Instagram</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control" type="text" value="www.instagram.com">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Twitter</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.twitter.com">
+                                <div class="">
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <button type="reset" class="btn">Save changes</button>
+                                                <button type="reset" class="btn-secondry">Cancel</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Instagram</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.instagram.com">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="reset" class="btn">Save changes</button>
-                                    <button type="reset" class="btn-secondry">Cancel</button>
-                                </div>
+                            </form>
+
                         </div>
-                        </form>
-                        <form class="edit-profile">
-                            <div class="row">
-                                <div class="col-12 m-t20">
-                                    <div class="ml-auto">
-                                        <h3 class="m-form__section">4. Plus d'informations</h3>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <table id="item-add" style="width:100%;">
-                                        <tr class="list-item">
-                                            <td>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label class="col-form-label">Nom du Cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Intitule du cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Quota Horaire</label>
-                                                        <div>
-                                                            <input class="form-control" type="time" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label class="col-form-label">Close</label>
-                                                        <div class="form-group">
-                                                            <a class="delete" href="#"><i class="fa fa-close"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="col-12">
-                                    <button type="button" class="btn-secondry add-item m-r5"><i class="fa fa-fw fa-plus-circle"></i>Add Item</button>
-                                    <button type="reset" class="btn">Save changes</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
+                <!-- Your Profile Views Chart END-->
             </div>
-            <!-- Your Profile Views Chart END-->
-        </div>
         </div>
     </main>
     <div class="ttr-overlay"></div>
@@ -492,23 +458,5 @@
     <script src="~/Scripts/chart/chart.min.js"></script>
     <script src="~/Scripts/js1/admin.js"></script>
     <script src="~/Scripts/switcher/switcher.js"></script>
-    <script>
-        // Pricing add
-        function newMenuItem() {
-            var newElem = $('tr.list-item').first().clone();
-            newElem.find('input').val('');
-            newElem.appendTo('table#item-add');
-        }
-        if ($("table#item-add").is('*')) {
-            $('.add-item').on('click', function (e) {
-                e.preventDefault();
-                newMenuItem();
-            });
-            $(document).on("click", "#item-add .delete", function (e) {
-                e.preventDefault();
-                $(this).parent().parent().parent().parent().remove();
-            });
-        }
-    </script>
 </body>
 </html>

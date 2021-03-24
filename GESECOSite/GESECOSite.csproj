@@ -302,6 +302,13 @@
     <Content Include="Views\Home\ForgetPassword.cshtml" />
     <Content Include="Views\Admin\AddStudents.cshtml" />
     <Content Include="Views\Admin\AddTeachers.cshtml" />
+    <Content Include="Views\Home\Authentification.cshtml" />
+    <Content Include="Views\Admin\EditionInfos.cshtml" />
+    <Content Include="Views\Admin\IndexAdmin.cshtml" />
+    <Content Include="Views\Admin\Inscription.cshtml" />
+    <Content Include="Views\Admin\ListeEtudiant.cshtml" />
+    <Content Include="Views\Admin\Payement.cshtml" />
+    <Content Include="Views\Home\IndexHome.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

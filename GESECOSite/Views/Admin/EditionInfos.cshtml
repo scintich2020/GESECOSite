@@ -27,10 +27,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="~/images/logo.png" />
 
     <!-- PAGE TITLE HERE ============================================= -->
-    <title>Ges Eco : Education & Discipline </title>
+    <title>Ges Eco: Education & Discipline </title>
 
     <!-- MOBILE SPECIFIC ============================================= -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- All PLUGINS CSS ============================================= -->
     <link rel="stylesheet" type="text/css" href="~/Content/css/assets.css">
@@ -80,7 +81,6 @@
                         <a href="#" class="ttr-material-button ttr-submenu-toggle">QUICK MENU <i class="fa fa-angle-down"></i></a>
                         <div class="ttr-header-submenu">
                             <ul>
-                                @*todo*@
                                 <li><a href="../courses.html">Our Courses</a></li>
                                 <li><a href="../event.html">New Event</a></li>
                                 <li><a href="../membership.html">Membership</a></li>
@@ -236,9 +236,9 @@
             <div class="ttr-sidebar-logo">
                 <a href="#"><img alt="" src="~/images/logo.png" width="122" height="27"></a>
                 <!-- <div class="ttr-sidebar-pin-button" title="Pin/Unpin Menu">
-        <i class="material-icons ttr-fixed-icon">gps_fixed</i>
-        <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
-    </div> -->
+                    <i class="material-icons ttr-fixed-icon">gps_fixed</i>
+                    <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
+                </div> -->
                 <div class="ttr-sidebar-toggle-button">
                     <i class="ti-arrow-left"></i>
                 </div>
@@ -248,20 +248,21 @@
             <nav class="ttr-sidebar-navi">
                 <ul>
                     <li>
+                        @*todo*@
                         <a href="index.html" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-home"></i></span>
                             <span class="ttr-label">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Inscription.html" class="ttr-material-button">
+                        <a href="@Url.Action("Inscription","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-book"></i></span>
                             <span class="ttr-label">Inscription</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="ttr-material-button">
-                            <span class="ttr-icon"><i class="ti-email"></i></span>
+                            <span class="ttr-icon"><i class="ti-user"></i></span>
                             <span class="ttr-label">Administration</span>
                             <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
                         </a>
@@ -275,28 +276,27 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="Authentification.html" class="ttr-material-button">
+                        @*todo*@
+                        <a href="bookmark.html" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
                             <span class="ttr-label">Etat</span>
                         </a>
                     </li>
                     <li>
-                        @*todo*@
-                        <a href="payement.html" class="ttr-material-button">
+                        <a href="@Url.Action("Payement","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-comments"></i></span>
                             <span class="ttr-label">Payement</span>
                         </a>
                     </li>
                     <li>
-                        @*todo*@
-                        <a href="Liste_Etu.html" class="ttr-material-button">
+                        <a href="@Url.Action("ListeEtudiant","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
                             <span class="ttr-label">Liste des Etudiants</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Edition_infos.html" class="ttr-material-button">
-                            <span class="ttr-icon"><i class="ti-user"></i></span>
+                        <a href="@Url.Action("EditionInfos","Admin")" class="ttr-material-button">
+                            <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
                             <span class="ttr-label">Edition des Informations</span>
 
                         </a>
@@ -314,158 +314,73 @@
     <main class="ttr-wrapper">
         <div class="container-fluid">
             <div class="db-breadcrumb">
-                <h4 class="breadcrumb-title">Ajouter un Enseignant</h4>
+                <h4 class="breadcrumb-title">Edition des informations</h4>
                 <ul class="db-breadcrumb-list">
                     <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-                    <li>Ajouter un Enseignant</li>
+                    <li>Edition des Informations</li>
                 </ul>
             </div>
             <div class="row">
                 <!-- Your Profile Views Chart -->
-                <div class="col-lg-12 m-b30">
-                    <div class="widget-box">
-                        <div class="wc-title">
-                            <h4>Ajouter un Enseignant</h4>
-                        </div>
-                        <div class="widget-inner">
-                            <form class="edit-profile m-b30">
-                                <div class="">
-                                    <div class="form-group row">
-                                        <div class="col-sm-10  ml-auto">
-                                            <h3>1. Informations primaires</h3>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Nom</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="FirstName">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Prenom</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Lastname">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">No.Telephone</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Phone No.">
-                                        </div>
-                                    </div>
 
-                                    <div class="seperator"></div>
-
-                                    <div class="form-group row">
-                                        <div class="col-sm-10 ml-auto">
-                                            <h3>2. Informations Secondaires</h3>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Email</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="email" value="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Ne(e) le</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="datetime" value="Born on">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Ville</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="City">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Adresse</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Address">
-                                        </div>
-                                    </div>
-
-                                    <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
-
-                                    <div class="col-12 m-t20">
-                                        <div class="ml-auto">
-                                            <h3 class="m-form__section">3. Adresses Sociales</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Facebook</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.facebook.com">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Twitter</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.twitter.com">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Instagram</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.instagram.com">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="reset" class="btn">Save changes</button>
-                                    <button type="reset" class="btn-secondry">Cancel</button>
-                                </div>
-                        </div>
-                        </form>
-                        <form class="edit-profile">
-                            <div class="row">
-                                <div class="col-12 m-t20">
-                                    <div class="ml-auto">
-                                        <h3 class="m-form__section">4. Plus d'informations</h3>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <table id="item-add" style="width:100%;">
-                                        <tr class="list-item">
-                                            <td>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label class="col-form-label">Nom du Cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Intitule du cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Quota Horaire</label>
-                                                        <div>
-                                                            <input class="form-control" type="time" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label class="col-form-label">Close</label>
-                                                        <div class="form-group">
-                                                            <a class="delete" href="#"><i class="fa fa-close"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="col-12">
-                                    <button type="button" class="btn-secondry add-item m-r5"><i class="fa fa-fw fa-plus-circle"></i>Add Item</button>
-                                    <button type="reset" class="btn">Save changes</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prenom</th>
+                            <th scope="col">Filiere</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col">Photos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-sm-7">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
                 </div>
             </div>
             <!-- Your Profile Views Chart END-->
@@ -493,22 +408,9 @@
     <script src="~/Scripts/js1/admin.js"></script>
     <script src="~/Scripts/switcher/switcher.js"></script>
     <script>
-        // Pricing add
-        function newMenuItem() {
-            var newElem = $('tr.list-item').first().clone();
-            newElem.find('input').val('');
-            newElem.appendTo('table#item-add');
-        }
-        if ($("table#item-add").is('*')) {
-            $('.add-item').on('click', function (e) {
-                e.preventDefault();
-                newMenuItem();
-            });
-            $(document).on("click", "#item-add .delete", function (e) {
-                e.preventDefault();
-                $(this).parent().parent().parent().parent().remove();
-            });
-        }
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
 </body>
 </html>

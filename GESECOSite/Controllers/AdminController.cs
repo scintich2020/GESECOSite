@@ -21,5 +21,29 @@ namespace GESECOSite.Controllers
         {
             return View();
         }
+        public ActionResult EditionInfos()
+        {
+            return View();
+        }
+        public ActionResult Authentification()
+        {
+            return View();
+        }
+        public ActionResult IndexAdmin()
+        {
+            return View();
+        }
+        public ActionResult Inscription()
+        {
+            return View();
+        }
+        public ActionResult ListeEtudiant()
+        {
+            return View();
+        }
+        public ActionResult Payement()
+        {
+            return View();
+        }
     }
 }

@@ -27,7 +27,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="~/images/logo.png" />
 
     <!-- PAGE TITLE HERE ============================================= -->
-    <title>Ges Eco : Education & Discipline </title>
+    <title>Ges Eco : Education & Education </title>
 
     <!-- MOBILE SPECIFIC ============================================= -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -234,7 +234,7 @@
         <div class="ttr-sidebar-wrapper content-scroll">
             <!-- side menu logo start -->
             <div class="ttr-sidebar-logo">
-                <a href="#"><img alt="" src="~/images/logo.png" width="122" height="27"></a>
+                <a href="#"><img alt="" src="~/images/logo.png"  width="122" height="27"></a>
                 <!-- <div class="ttr-sidebar-pin-button" title="Pin/Unpin Menu">
         <i class="material-icons ttr-fixed-icon">gps_fixed</i>
         <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
@@ -248,13 +248,14 @@
             <nav class="ttr-sidebar-navi">
                 <ul>
                     <li>
+                        @*todo*@
                         <a href="index.html" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-home"></i></span>
                             <span class="ttr-label">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Inscription.html" class="ttr-material-button">
+                        <a href="@Url.Action("Inscription","Admin")" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-book"></i></span>
                             <span class="ttr-label">Inscription</span>
                         </a>
@@ -281,14 +282,12 @@
                         </a>
                     </li>
                     <li>
-                        @*todo*@
                         <a href="payement.html" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-comments"></i></span>
                             <span class="ttr-label">Payement</span>
                         </a>
                     </li>
                     <li>
-                        @*todo*@
                         <a href="Liste_Etu.html" class="ttr-material-button">
                             <span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
                             <span class="ttr-label">Liste des Etudiants</span>
@@ -314,10 +313,10 @@
     <main class="ttr-wrapper">
         <div class="container-fluid">
             <div class="db-breadcrumb">
-                <h4 class="breadcrumb-title">Ajouter un Enseignant</h4>
+                <h4 class="breadcrumb-title">Etat</h4>
                 <ul class="db-breadcrumb-list">
                     <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-                    <li>Ajouter un Enseignant</li>
+                    <li>Etat</li>
                 </ul>
             </div>
             <div class="row">
@@ -325,144 +324,82 @@
                 <div class="col-lg-12 m-b30">
                     <div class="widget-box">
                         <div class="wc-title">
-                            <h4>Ajouter un Enseignant</h4>
+                            <h4>Etat</h4>
                         </div>
-                        <div class="widget-inner">
-                            <form class="edit-profile m-b30">
-                                <div class="">
-                                    <div class="form-group row">
-                                        <div class="col-sm-10  ml-auto">
-                                            <h3>1. Informations primaires</h3>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Nom</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="FirstName">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Prenom</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Lastname">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">No.Telephone</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Phone No.">
-                                        </div>
-                                    </div>
-
-                                    <div class="seperator"></div>
-
-                                    <div class="form-group row">
-                                        <div class="col-sm-10 ml-auto">
-                                            <h3>2. Informations Secondaires</h3>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Email</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="email" value="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Ne(e) le</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="datetime" value="Born on">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Ville</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="City">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Adresse</label>
-                                        <div class="col-sm-7">
-                                            <input class="form-control" type="text" value="Address">
-                                        </div>
-                                    </div>
-
-                                    <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>
-
-                                    <div class="col-12 m-t20">
-                                        <div class="ml-auto">
-                                            <h3 class="m-form__section">3. Adresses Sociales</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Facebook</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.facebook.com">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Twitter</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.twitter.com">
-                                    </div>
-                                </div>
-                                <div class="form-group col-6">
-                                    <label class="col-form-label">Instagram</label>
-                                    <div>
-                                        <input class="form-control" type="text" value="www.instagram.com">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="reset" class="btn">Save changes</button>
-                                    <button type="reset" class="btn-secondry">Cancel</button>
-                                </div>
-                        </div>
-                        </form>
-                        <form class="edit-profile">
+                        <form>
                             <div class="row">
-                                <div class="col-12 m-t20">
-                                    <div class="ml-auto">
-                                        <h3 class="m-form__section">4. Plus d'informations</h3>
+                                <div class="col-md-5 pr-1">
+                                    <div class="form-group">
+                                        <label>Matricule (disabled)</label>
+                                        <input type="text" class="form-control" disabled="" placeholder="Matricule" value="">
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <table id="item-add" style="width:100%;">
-                                        <tr class="list-item">
-                                            <td>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label class="col-form-label">Nom du Cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Intitule du cours</label>
-                                                        <div>
-                                                            <input class="form-control" type="text" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label class="col-form-label">Quota Horaire</label>
-                                                        <div>
-                                                            <input class="form-control" type="time" value="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label class="col-form-label">Close</label>
-                                                        <div class="form-group">
-                                                            <a class="delete" href="#"><i class="fa fa-close"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                <div class="col-md-3 px-1">
+                                    <div class="form-group">
+                                        <label>Nom</label>
+                                        <input type="text" class="form-control" placeholder="Username" value="">
+                                    </div>
                                 </div>
-                                <div class="col-12">
-                                    <button type="button" class="btn-secondry add-item m-r5"><i class="fa fa-fw fa-plus-circle"></i>Add Item</button>
-                                    <button type="reset" class="btn">Save changes</button>
+                                <div class="col-md-4 pl-1">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pr-1">
+                                    <div class="form-group">
+                                        <label>Filiere</label>
+                                        <input type="text" class="form-control" placeholder="Sector" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-1">
+                                    <div class="form-group">
+                                        <label>Prenom</label>
+                                        <input type="text" class="form-control" placeholder="Last Name" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Adresse</label>
+                                        <input type="text" class="form-control" placeholder="Home Address" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 pr-1">
+                                    <div class="form-group">
+                                        <label>Ne(e) le</label>
+                                        <input type="date" class="form-control" placeholder="Birthday" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-1">
+                                    <div class="form-group">
+                                        <label>A</label>
+                                        <input type="text" class="form-control" placeholder="City" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pl-1">
+                                    <div class="form-group">
+                                        <label>Telephone</label>
+                                        <input type="number" class="form-control" placeholder="phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Informations Supplementaires</label>
+                                        <textarea rows="4" cols="80" class="form-control" placeholder="Description" value="Mike"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-danger">Close</button>
                             </div>
                         </form>
                     </div>

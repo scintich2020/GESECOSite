@@ -25,5 +25,10 @@ namespace GESECOSite.Controllers
         {
             return View();
         }
+        public ActionResult IndexHome()
+        {
+            return View();
+        }
+
     }
 }
